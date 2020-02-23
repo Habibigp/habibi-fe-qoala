@@ -1,0 +1,133 @@
+.container-fluid {
+    padding: 0 20px;
+}
+.text-center {
+    text-align: center !important;
+}
+.dnone {
+    display: none;
+}
+
+.wrapper-navbar {
+    display: flex;
+    align-items: center;
+    padding: 12px 10px;
+    background: white;
+}
+.wrapper-navbar .title-menu {
+    flex: 1;
+}
+.wrapper-navbar .wrapper-button-menu {
+    flex: 1;
+    text-align: right;
+}
+.btn-qoala {
+    color: #fff;
+    background-color: #ff7701;
+    border-color: #ff7701;
+}
+.btn-qoala:hover {
+    color: #fff;
+    background-color: #e06902;
+    border-color: #e06902;
+}
+
+.wrapper-content {
+    background-color: #dae0ff;
+    padding-top: 62px;
+}
+.content {
+    height: 400px;
+    margin: 0 45px;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.wrapper-card {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0;
+}
+.fill-card {
+    width: 350px;
+    /* height: fit-content; */
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    margin: 0 5px;
+    padding: 15px 0;
+    border: #ff7701 solid 1px;
+    background-color: white;
+    box-shadow: 4px 4px 4px 0px #0000002e;
+}
+.bg-red {
+    background-color: red;
+}
+.bg-green {
+    background-color: green;
+}
+.bg-blue {
+    background-color: blue;
+}
+.section-fill-card > img {
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 10px;
+}
+
+.section-fill-card {
+    margin-bottom: 10px;
+    padding: 0 15px;
+}
+.card-text-small {
+    font-size: 13px;
+    word-break: break-word; 
+}
+.card-text-medium {
+    font-size: 16px;
+    word-break: break-word;
+}
+.card-text-large {
+    font-size: 19px;
+    word-break: break-word;
+}
+
+.loader {
+    position: absolute;
+    top: 35%;
+}
+
+@media (max-width: 576px) {
+    .loader {
+        top: 30%;
+    }
+    .dnone {
+        display: block;
+    }
+    .content {
+        height: 800px;
+        overflow-x: hidden;
+        overflow-y: auto; 
+    }
+    .wrapper-card {
+        flex-direction: row;
+        justify-content: center;
+    }
+    .fill-card {
+        width: 96%;
+        margin-bottom: 12px;
+    }
+    .section-fill-card {
+        display: flex;
+        align-items: center;
+    }
+    .section-fill-card > img {
+        float: left;
+        margin: 0 10px 0 0;
+    }
+}
