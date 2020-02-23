@@ -1,7 +1,7 @@
 var page
 var data = []
 var dataPerson
-var dataPage
+var dataPage 
 
 $(document).ready(function () {
     $(".loader").show()
